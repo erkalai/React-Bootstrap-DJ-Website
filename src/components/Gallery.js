@@ -4,11 +4,7 @@ import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 
 
-const spanStyle = {
-    padding: '20px',
-    background: '#efefef',
-    color: '#000000'
-  }
+ 
   
   const divStyle = {
     display: 'flex',
@@ -31,7 +27,7 @@ const spanStyle = {
 
 const Gallery = () => {
   return (
-    <>
+    <section id='gallery'>
         <div className='title-holder text-center mt-3'>
         <h2>Gallery</h2>
         </div>
@@ -46,11 +42,10 @@ const Gallery = () => {
             ))} 
             </Slide>
         </div>
-      </>
+      </section>
   )
 }
 
 export default Gallery
 
 
-// https://www.youtube.com/watch?v=B_IYFFbKkfY

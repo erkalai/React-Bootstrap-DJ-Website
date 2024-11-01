@@ -54,23 +54,23 @@ const data = [
 const Services = () => {
   return (
     <>
-    <section id='blog' className='block blog-block mt-3'>
+    <section id='services' className='block services-block mt-3'>
     <div className='title-holder text-center'>
             <h2>SERVICES</h2>
             <div className='subtitle'>-We Provide Service For-</div>
-          </div>
+    </div>
       <Container fluid >
           <Row className=''>
-            {data.map((blog) => {
+            {data.map((services) => {
               return(
-                <Col   key={blog.id} className='mt-2 d-flex justify-content-center ' >
+                <Col   key={services.id} className='mt-2 d-flex justify-content-center ' >
               <div className='holder'>
                 <Card className='text-center' style={{ width: '20rem', height:'33rem'}}>
-                  <Card.Img variant="top" src={blog.image} />
+                  <Card.Img variant="top" src={services.image} />
                   <Card.Body>
-                    <Card.Title>{blog.title}</Card.Title>
-                    <Card.Text>{blog.descriptiom}</Card.Text>
-                    <a href={blog.link} className='btn btn-primary'>Read More</a>
+                    <Card.Title>{services.title}</Card.Title>
+                    <Card.Text>{services.descriptiom}</Card.Text>
+                    <a href={services.link} className='btn btn-primary'>Read More</a>
                   </Card.Body>
                 </Card>
               </div>
