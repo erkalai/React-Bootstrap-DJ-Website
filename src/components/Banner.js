@@ -6,7 +6,7 @@ import Image from 'react-bootstrap/esm/Image'
 
 const Banner = () => {
   return (
-    <>
+    <section id='' >
              <Carousel>
                 <Carousel.Item interval={500}>
                     <Image  className='d-block  w-100 vh-100' src={require('../assets/cor (1).jpg')} text="First slide" />
@@ -30,7 +30,7 @@ const Banner = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
               </Carousel>
-    </>
+    </section>
   );
 }
 export default Banner;

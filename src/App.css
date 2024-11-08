@@ -21,6 +21,28 @@ background-size: cover;
   pointer-events: none;
 }
 
+.embedMap iframe{
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+.storyTitle{
+
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 4rem;
+  font-weight: 500px;
+
+}
+.storyimg{
+  width: 10px;
+  height: 200px;
+}
+.ex{
+  color: orange;
+  font-size: 100px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

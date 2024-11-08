@@ -3,7 +3,7 @@ import Col from 'react-bootstrap/esm/Col'
 import Container from 'react-bootstrap/esm/Container'
 import Row from 'react-bootstrap/esm/Row'
 
-const Appfooter = () => {
+const AppFooter = () => {
   return (
    <>
     <div className='title-holder text-center mt-3'><h2>Footer</h2></div>
@@ -23,10 +23,10 @@ const Appfooter = () => {
                 <Col>
                 <h5>Quick Links</h5>
                 <ul className='list-unstyled'>
-                    <li><a href='#'className='text-white'>Home</a></li>
-                    <li><a href='#'className='text-white'>Services</a></li>
-                    <li><a href='#'className='text-white'>Gallery</a></li>
-                    <li><a href='#'className='text-white'>About Us</a></li>
+                    <li><a href='#home'className='text-white'>Home</a></li>
+                    <li><a href='#services'className='text-white'>Services</a></li>
+                    <li><a href='#gallery'className='text-white'>Gallery</a></li>
+                    <li><a href='#about_us'className='text-white'>About Us</a></li>
                 </ul>
                 </Col>
             </Row>
@@ -43,4 +43,4 @@ const Appfooter = () => {
   )
 }
 
-export default Appfooter
+export default AppFooter

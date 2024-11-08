@@ -54,7 +54,7 @@ const data = [
 const Services = () => {
   return (
     <>
-    <section id='services' className='block services-block mt-3'>
+    <section id='services' className='block services-block mt-5'>
     <div className='title-holder text-center'>
             <h2>SERVICES</h2>
             <div className='subtitle'>-We Provide Service For-</div>

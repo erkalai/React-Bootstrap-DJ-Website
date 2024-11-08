@@ -1,14 +1,9 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Image from 'react-bootstrap/Image';
-import Services from './Services';
-import Aboutus from './Aboutus';
-import App from '../App';
 
-
-// import React, {useRef} from 'react';
 
 
 
@@ -16,11 +11,11 @@ import App from '../App';
 
 const AppNavBar = () => {
   return (
-    <section id='nav'>
+    <section id='home'>
     
-    <Navbar expand="lg" data-bs-theme='dark' className=" bg-body-tertiary d-block sticky-top "  >
+    <Navbar expand="lg" data-bs-theme='dark' className="position-sticky bg-body-tertiary d-block sticky-top "  >
         <Container>
-        <section className='img'><Image className='w-10 h-10 d-block' src={require('../assets/Logo.png')} fluid /></section>
+        <section className='img'> <Image className='w-10 h-10 d-block' src={require('../assets/Logo.png')} fluid /></section>
             <Navbar.Brand href="#home">Muthamizh Audios
             
             </Navbar.Brand>
