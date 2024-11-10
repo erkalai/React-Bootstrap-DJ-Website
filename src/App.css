@@ -1,3 +1,16 @@
+.GE_BG{
+  background-image: url('../src/assets/dj-home.jpg');
+}
+.ContactBg {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-image: url('../src/assets/ContactFormImg.png');
+  background-size: 100%; /* Ensure the image covers the container */
+  background-position: bottom center; /* Center the image within the container */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  overflow: hidden;
+}
 .bg {
 display: flex;
 height: 10px;

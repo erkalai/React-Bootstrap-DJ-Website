@@ -7,8 +7,8 @@ import Image from 'react-bootstrap/Image';
 
 const AboutUs = () => {
   return (
-    <section id='about_us'>
-    <Container className='mt-5'>
+    <section id='about_us' className='mb-5 mt-5'>
+    <Container className=''>
         <Row>
             <Col >
                 <h1>About Us</h1>

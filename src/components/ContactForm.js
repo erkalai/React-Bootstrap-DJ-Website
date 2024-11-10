@@ -1,33 +1,65 @@
-import React from 'react'
-import Col from 'react-bootstrap/esm/Col'
-import Container from 'react-bootstrap/esm/Container'
-import Row from 'react-bootstrap/esm/Row'
-import ContactFormOnly from './ContactFormOnly'
+import React, { useState } from 'react';
+import { Modal, Button, Form } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const ContactForm = () => {
-  return (
-    <section id='contact_form'>
-        <Container className='mt-5'>
-            <Row>
-                <Col>
-                <div className='mt-2'>
-                    <h3>General Enquiries</h3>
-                    <div>muthamizhaudios@gmail.com</div>
-                    <div>thamizh3500@gmail.com</div>
-                </div>
-                <div className=''>
-                    <h3>Call Us</h3>
-                    <div>+91 80983 53500</div>
-                    <div>+91 80988 87469</div>
-                </div>
-                </Col>
-                <Col>
-                    <ContactFormOnly />
-                </Col>
-            </Row>
-        </Container>
-    </section>
-  )
-}
+  const [showModal, setShowModal] = useState(false);
 
-export default ContactForm
+  // Toggle modal visibility
+  const handleShow = () => setShowModal(true);
+  const handleClose = () => setShowModal(false);
+
+  return (
+    <div>
+      {/* Contact Icon */}
+      <button 
+        className="btn btn-primary" 
+        onClick={handleShow} 
+        style={{ position: 'fixed', bottom: '80px', right: '25px', borderRadius: '50%' }}
+      >
+        <i className="fbi bi-envelope-arrow-up-fill"></i> {/* Font Awesome icon */}
+      </button>
+
+      {/* Modal for Contact Form */}
+      <Modal show={showModal} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title className='text-center'>Contact Us</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Form>
+            <Form.Group controlId="formBasicName">
+              <Form.Label>Name</Form.Label>
+              <Form.Control type="text" placeholder="Enter your name" />
+            </Form.Group>
+
+            <Form.Group controlId="formBasicMobile">
+              <Form.Label>Email address</Form.Label>
+              <Form.Control type="tel" placeholder="Enter your Mobile No" />
+            </Form.Group>
+
+            <Form.Group controlId="formBasicEmail">
+              <Form.Label>Email address</Form.Label>
+              <Form.Control type="email" placeholder="Enter your email" />
+            </Form.Group>
+
+            <Form.Group controlId="formBasicMessage">
+              <Form.Label>Message</Form.Label>
+              <Form.Control as="textarea" rows={3} placeholder="Your message" />
+            </Form.Group>
+
+            <Button variant="primary" type="submit" className='mt-3'>
+              Send Message
+            </Button>
+          </Form>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </div>
+  );
+};
+
+export default ContactForm;
