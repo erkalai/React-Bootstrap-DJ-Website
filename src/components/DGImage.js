@@ -7,6 +7,6 @@ const DGImage = () => {
       
     </div>
   )
-}
+} 
 
 export default DGImage
