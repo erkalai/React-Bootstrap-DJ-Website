@@ -14,10 +14,10 @@ const AppFooter = () => {
         <div className=' bg-black '>
             <div className='  text-center '> Get connected cith us on social networks
             
-            <a className='text-end ms-5' href="https://wa.me/8098353500"><i className=' btn bi bi-instagram  text-white text-end'></i></a>
-            <a className='ms-5' href="https://www.youtube.com/"><i className=' btn bi bi-youtube  text-white text-end '></i></a>
-            <a className='ms-5' href="https://wa.me/8098887469"><i className=' btn bi bi-whatsapp  text-white text-end'></i></a>
-            <a className='m-5' href="https://wa.me/8098353500"><i className='  btn bi bi-whatsapp  text-white text-end'></i></a>
+            <a className='text-end ms-5' href="https://wa.me/918098353500"><i className=' btn bi bi-instagram  text-white text-end'></i></a>
+            <a className='ms-5' href="https://www.youtube.com/@muthamizhaudios"><i className=' btn bi bi-youtube  text-white text-end '></i></a>
+            <a className='ms-5' href="https://wa.me/918098887469"><i className=' btn bi bi-whatsapp  text-white text-end'></i></a>
+            <a className='m-5' href="https://wa.me/918098353500"><i className='  btn bi bi-whatsapp  text-white text-end'></i></a>
             
             </div>
         </div>
