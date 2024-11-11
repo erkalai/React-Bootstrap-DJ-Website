@@ -1,9 +1,11 @@
 import React from 'react'
-import '../App.css';
+import '../assets/css/style.css'
 
 const DGImage = () => {
   return (
-    <div className='ContactBg'></div>
+    <div className='ContactBg '>
+      
+    </div>
   )
 }
 

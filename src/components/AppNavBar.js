@@ -11,7 +11,7 @@ import Image from 'react-bootstrap/Image';
 
 const AppNavBar = () => {
   return (
-    <section id='home'>
+    <section id='home' >
     
     <Navbar expand="lg" data-bs-theme='dark' className="position-sticky bg-body-tertiary d-block sticky-top "  >
         <Container>
@@ -23,7 +23,7 @@ const AppNavBar = () => {
             <Navbar.Collapse id="basic-navbar-nav " className=' justify-content-end'>
             <Nav>
                 <Nav.Link href="#home" >Home</Nav.Link>
-                <Nav.Link href="#services" >Services</Nav.Link>
+                <Nav.Link href="#serviceCard" >Services</Nav.Link>
                 <Nav.Link href="#gallery">Gallery</Nav.Link>
                 <Nav.Link href="#videos" >Videos</Nav.Link>
                 <Nav.Link href="#contact_us">Contact Us</Nav.Link>

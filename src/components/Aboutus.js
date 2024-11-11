@@ -7,7 +7,7 @@ import Image from 'react-bootstrap/Image';
 
 const AboutUs = () => {
   return (
-    <section id='about_us' className='mb-5 mt-5'>
+    <section id='about_us' className='aboutus mb-5 mt-3 p-2'>
     <Container className=''>
         <Row>
             <Col >
@@ -19,7 +19,7 @@ const AboutUs = () => {
                 
             </Col>
             <Col md={6} >
-                <Image  src={require('../assets/dj-home.jpg')} fluid />
+                <Image  src={require('../assets/img/djwhite.jpg')} fluid />
             </Col>
         </Row>
     </Container>

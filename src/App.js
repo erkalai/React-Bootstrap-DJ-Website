@@ -1,6 +1,5 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import AppNavBar from './components/AppNavBar';
 import Banner from './components/Banner';
 import Services from './components/Services';
@@ -14,7 +13,8 @@ import GeneralEnquiries from './components/GeneralEnquiries';
 import DGImage from './components/DGImage';
 import ContactForm from './components/ContactForm';
 import Whatsapp from './components/Whatsapp'
-
+import ServicesCard from './components/ServicesCard';
+import ImageGallery from './components/ImageGallery';
 
 function App() {
   return (
@@ -22,8 +22,11 @@ function App() {
       <AppNavBar />
       <Banner />
       <Story />
-      <Services />
-      <Gallery />
+      {/* <Services /> */}
+      {/* <Gallery /> */}
+    <ImageGallery />
+
+      <ServicesCard />
       <AboutUs />
       {/* <ContactUs /> */}
       {/* <GeneralEnquiries /> */}

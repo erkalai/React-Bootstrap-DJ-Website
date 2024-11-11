@@ -1,51 +1,71 @@
-import React from 'react'
-
-import { Slide } from 'react-slideshow-image';
-import 'react-slideshow-image/dist/styles.css'
-
-
- 
-  
-  const divStyle = {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundSize: 'cover',
-    height: '400px'
-  }
-  const slideImages = [
-    {
-        image : require('../assets/img3.jpg')
-    },
-    {
-        image : require('../assets/img1.jpg')
-    },
-    {
-        image : require('../assets/img2.jpg')
-    },
-  ];
+import React, { useState } from 'react';
+import { Modal, Button, Row, Col, Card } from 'react-bootstrap';
 
 const Gallery = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  // List of images for the gallery
+  const images = [
+    {  src: require('../assets/img/audio.jpg'), alt: 'Audio Equipment' },
+    { src: require('../assets/img/lighting.jpg'), alt: 'Audio Equipment' },
+    {  src: require('../assets/img/audio.jpg'), alt: 'Audio Equipment' },
+    { src: require('../assets/img/lighting.jpg'), alt: 'Audio Equipment' },
+    { src: '/path/to/image3.jpg', alt: 'Image 3' },
+    { src: '/path/to/image4.jpg', alt: 'Image 4' },
+    // Add more images as needed
+  ];
+
+  // Handle opening the modal with the selected image
+  const handleShow = (imageSrc) => {
+    setSelectedImage(imageSrc);
+    setShowModal(true);
+  };
+
+  // Handle closing the modal
+  const handleClose = () => setShowModal(false);
+
   return (
-    <section id='gallery'>
-        <div className='title-holder text-center mt-3'>
-        <h2>Gallery</h2>
-        </div>
-        <div className="slide-container">
-            <Slide>
-            {slideImages.map((slideImage, index)=> (
-                <div key={index}>
-                <div style={{ ...divStyle, 'backgroundImage': `url(${slideImage.image})` }}>
-                    {/* <span style={spanStyle}>{slideImage.caption}</span> */}
-                </div>
-                </div>
-            ))} 
-            </Slide>
-        </div>
-      </section>
-  )
-}
+    <div>
+      <Row>
+        {images.map((image, index) => (
+          <Col md={3} sm={6} key={index}>
+            <Card>
+              <Card.Img
+                variant="top"
+                src={image.src}
+                alt={image.alt}
+                onClick={() => handleShow(image.src)}
+                style={{ cursor: 'pointer' }}
+              />
+              <Card.Body>
+                <Card.Text>{image.alt}</Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        ))}
+      </Row>
 
-export default Gallery
+      {/* Modal for displaying enlarged image */}
+      <Modal show={showModal} onHide={handleClose} centered>
+        <Modal.Header closeButton>
+          <Modal.Title>Image Preview</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <img
+            src={selectedImage}
+            alt="Selected"
+            style={{ width: '100%', height: 'auto' }}
+          />
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </div>
+  );
+};
 
-
+export default Gallery;

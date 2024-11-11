@@ -3,6 +3,7 @@ import React from 'react'
 import '../App.css'
 import Carousel from 'react-bootstrap/Carousel'
 import Image from 'react-bootstrap/esm/Image'
+import AppNavBar from './AppNavBar'
 
 const Banner = () => {
   return (
