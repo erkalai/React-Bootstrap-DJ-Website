@@ -1,5 +1,5 @@
 import React from 'react'
-import '../App.css';
+import '../assets/css/style.css';
 import Col from 'react-bootstrap/esm/Col'
 import Container from 'react-bootstrap/esm/Container'
 import Row from 'react-bootstrap/esm/Row'
@@ -11,7 +11,7 @@ const AppFooter = () => {
    <>
 
     <footer className='footBg bg-secondary  text-white py-'>
-        <div className=' bg-dark '>
+        <div className=' bg-black '>
             <div className='  text-center '> Get connected cith us on social networks
             
             <a className='text-end ms-5' href="https://wa.me/8098353500"><i className=' btn bi bi-instagram  text-white text-end'></i></a>
@@ -21,28 +21,28 @@ const AppFooter = () => {
             
             </div>
         </div>
-        <Container >
+        <Container className='mt-2'>
             <Row className='ms-3'>
-                <Col sm={12}>
-                <Image className='w-5 h-5 d-block' src={require('../assets/Logo.png')} fluid />
+                <Col sm={3}>
+                <Image className='dgimg d-block' src={require('../assets/img/dj1.png')} fluid />
                 <div className='fw-bold'>Contact Us</div>
                     <div>+91 80983 53500</div>
                     <div>+91 80988 87469</div>
                 </Col>
-                <Col sm={12} className='mt-2'>
+                <Col sm={3} className='mt-2'>
                 <div className='fw-bold'>Kachanam</div>
-                    <div>Thiruthuraipoondi Taluk,</div>
+                    <div>Thiruthuraipoondi Tk,</div>
                     <div>Thiruvarur Dt,</div>
                     <div>Tamilnadu -610 201</div>
                 </Col>
-                <Col sm={12} className='mt-2'>
+                <Col sm={3} className='mt-2'>
                 <div className='fw-bold'>Ammanur</div>
                     <div>Near Elementry School, Ammanur,</div>
-                    <div>Thiruthuraipoondi Taluk,</div>
+                    <div>Thiruthuraipoondi Tk,</div>
                     <div>Thiruvarur Dt,</div>
                     <div>Tamilnadu -610 201</div>
                 </Col>
-                <Col sm={12} className='mt-2'>
+                <Col sm={3} className='mt-2'>
                 <h5>Quick Links</h5>
                 <ul className='list-unstyled'>
                     <li><a href='#home'className='text-white'>Home</a></li>

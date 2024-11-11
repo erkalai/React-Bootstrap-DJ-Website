@@ -32,7 +32,7 @@ const WhatsApp = () => {
     `.trim();
 
     // WhatsApp phone number (replace with your own)
-    const whatsappNumber = "1234567890";
+    const whatsappNumber = "916383006516";
 
     // Create the WhatsApp link
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(messageText)}`;
