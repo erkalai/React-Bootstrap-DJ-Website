@@ -21,8 +21,8 @@ const AppFooter = () => {
             
             </div>
         </div>
-        <Container className='ms-3'>
-            <Row>
+        <Container >
+            <Row className='ms-3'>
                 <Col sm={12}>
                 <Image className='w-5 h-5 d-block' src={require('../assets/Logo.png')} fluid />
                 <div className='fw-bold'>Contact Us</div>
