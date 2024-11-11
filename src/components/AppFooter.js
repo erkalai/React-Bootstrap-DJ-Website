@@ -4,6 +4,7 @@ import Col from 'react-bootstrap/esm/Col'
 import Container from 'react-bootstrap/esm/Container'
 import Row from 'react-bootstrap/esm/Row'
 import 'bootstrap-icons/font/bootstrap-icons.css'
+import Image from 'react-bootstrap/Image';
 
 const AppFooter = () => {
   return (
@@ -22,26 +23,26 @@ const AppFooter = () => {
         </div>
         <Container className='text'>
             <Row>
-                <Col>
-                    <p className='fw-bold'> LOGO</p>
-                    <p>Muthamizh Audios</p>
+                <Col sm={12}>
+                <Image className='w-5 h-5 d-block' src={require('../assets/Logo.png')} fluid />
+                <div className='fw-bold'>Contact Us</div>
                     <div>+91 80983 53500</div>
                     <div>+91 80988 87469</div>
                 </Col>
-                <Col>
+                <Col sm={12} className='mt-2'>
                 <div className='fw-bold'>Kachanam</div>
                     <div>Thiruthuraipoondi Taluk,</div>
                     <div>Thiruvarur Dt,</div>
                     <div>Tamilnadu -610 201</div>
                 </Col>
-                <Col>
+                <Col sm={12} className='mt-2'>
                 <div className='fw-bold'>Ammanur</div>
                     <div>Near Elementry School, Ammanur,</div>
                     <div>Thiruthuraipoondi Taluk,</div>
                     <div>Thiruvarur Dt,</div>
                     <div>Tamilnadu -610 201</div>
                 </Col>
-                <Col>
+                <Col sm={12} className='mt-2'>
                 <h5>Quick Links</h5>
                 <ul className='list-unstyled'>
                     <li><a href='#home'className='text-white'>Home</a></li>
