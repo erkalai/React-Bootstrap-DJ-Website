@@ -15,6 +15,7 @@ const AppNavBar = () => {
     
     <Navbar expand="lg" data-bs-theme='dark' className="position-sticky bg-body-tertiary d-block sticky-top "  >
         <Container>
+          {/* Navigation Logo */}
         <div className='logo'> <Image className='logo w-10 h-10 d-block' src={require('../assets/img/logot.png')} fluid /></div>
             <Navbar.Brand href="#home" className='ms-3'>Muthamizh Audios
             
