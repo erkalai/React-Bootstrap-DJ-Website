@@ -8,7 +8,7 @@ import Image from 'react-bootstrap/Image';
 
 
 
-
+// Git Report
 const AppNavBar = () => {
   return (
     <section id='home' >
