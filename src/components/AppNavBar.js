@@ -8,14 +8,14 @@ import Image from 'react-bootstrap/Image';
 
 
 
-
+// Navigation Bar
 const AppNavBar = () => {
   return (
     <section id='home' >
     
     <Navbar expand="lg" data-bs-theme='dark' className="position-sticky bg-body-tertiary d-block sticky-top "  >
         <Container>
-        <section className='img'> <Image className='w-10 h-10 d-block' src={require('../assets/img/Logo.png')} fluid /></section>
+        <section className='img'> <Image className='w-10 h-10 d-block' src={require('../assets/img/top.png')} fluid /></section>
             <Navbar.Brand href="#home" className='ms-3 fw-bold' >MUTHAMIZH SOUND WAVE
             
             </Navbar.Brand>
