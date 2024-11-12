@@ -8,7 +8,6 @@ import '../assets/css/style.css';
 
 
 
-
 const AppNavBar = () => {
   return (
     <section id='home' >

@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       <AppNavBar />
-      <Banner />
+      {/* <Banner /> */}
       <Story />
       {/* <Services /> */}
       {/* <Gallery /> */}
