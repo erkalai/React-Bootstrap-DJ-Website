@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Image from 'react-bootstrap/Image';
-
+import '../assets/css/style.css';
 
 
 
@@ -18,8 +18,8 @@ const AppNavBar = () => {
     
     <Navbar expand="lg" data-bs-theme='dark' className="position-sticky bg-body-tertiary d-block sticky-top "  >
         <Container>
-        <section className='img'> <Image className='w-10 h-10 d-block' src={require('../assets/img/Logo.png')} fluid /></section>
-            <Navbar.Brand href="#home">Muthamizh Audios
+        <div className='logo'> <Image className='logo w-10 h-10 d-block' src={require('../assets/img/logot.png')} fluid /></div>
+            <Navbar.Brand href="#home" className='ms-3'>Muthamizh Audios
             
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
