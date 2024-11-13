@@ -3,7 +3,7 @@ import { Card, Col, Row } from 'react-bootstrap';
 import '../assets/css/style.css';  
 
 const Gallery = () => {
-  // Sample array of image data (URLs and titles)
+  
   const images = [
     { src: require('../assets/img/audio.jpg'), title: 'Image 1' },
     { src: require('../assets/img/cor (1).jpg'), title: 'Image 2' },
@@ -18,6 +18,7 @@ const Gallery = () => {
 
   return (
     <div className="container-f my-5 m-1">
+      <h2 className="services-heading text-center">- Gallery -</h2>
       <Row>
         {images.map((image, index) => (
           <Col key={index} xs={12} sm={6} md={4} lg={3} className="mb-4">

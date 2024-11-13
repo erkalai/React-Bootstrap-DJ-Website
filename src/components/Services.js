@@ -1,88 +1,76 @@
-import React from 'react'
-import Container from 'react-bootstrap/Container'
-import Col from 'react-bootstrap/esm/Col'
-import Row from 'react-bootstrap/esm/Row'
-import Card from 'react-bootstrap/esm/Card'
+import React, { useState } from 'react';
+import '../assets/css/style.css';
 
-const data = [
-
+// Array of services with title, description, and image
+const services = [
   {
-    id : 1,
-    image : require('../assets/img1.jpg'),
-    title : 'Wedding Reception',
-    descriptiom : 'We re getting married, and you are invited to our reception; lets make it unforgettable! Join us for a lifetime of love and celebration starting today.Our love is the focus of our special day; come celebrate with us at the reception and feel the love.',
-    link : '#'
+    title: 'Audio Services',
+    description:
+      'From the soft melodies of a wedding to lively tunes at a birthday party, our audio services ensure perfect sound.',
+    image: require('../assets/img/sericeAudio.jpg'),  // Path to your image
+    moreInfo: 'We use high-quality sound systems for crystal-clear audio at all events, ensuring every guest hears perfectly.',
   },
   {
-    id : 2,
-    image : require('../assets/img2.jpg'),
-    title : 'Birthday Party',
-    descriptiom : 'We re getting married, and you are invited to our reception; lets make it unforgettable! Join us for a lifetime of love and celebration starting today.Our love is the focus of our special day; come celebrate with us at the reception and feel the love.',
-    link : '#'
+    title: 'Event Management',
+    description:
+      'We handle every aspect of your event, from seamless coordination to ensuring that every detail is flawless.',
+    image: require('../assets/img/serviceEvent.jpg'), // Path to your image
+    moreInfo: 'Our experienced event planners will guide you through the entire planning process to make your event stress-free.',
   },
   {
-    id : 3,
-    image : require('../assets/img3.jpg'),
-    title : 'Public EVENTS',
-    descriptiom : 'We re getting married, and you are invited to our reception; lets make it unforgettable! Join us for a lifetime of love and celebration starting today.Our love is the focus of our special day; come celebrate with us at the reception and feel the love.',
-    link : '#'
+    title: 'Lighting Services',
+    description:
+      'Our lighting services add that magical touch to your event, creating the perfect atmosphere for any occasion.',
+    image: require('../assets/img/lighting.jpg'), // Path to your image
+    moreInfo: 'We offer customized lighting solutions to match the theme and mood of your event, from ambient lighting to stage lights.',
   },
-  {
-    id : 4,
-    image : require('../assets/img3.jpg'),
-    title : 'Mehendi  fUNCTION',
-    descriptiom : 'We re getting married, and you are invited to our reception; lets make it unforgettable! Join us for a lifetime of love and celebration starting today.Our love is the focus of our special day; come celebrate with us at the reception and feel the love.',
-    link : '#'
-  },
-  {
-    id : 5,
-    image : require('../assets/img3.jpg'),
-    title : 'Wedding Reception',
-    descriptiom : 'We re getting married, and you are invited to our reception; lets make it unforgettable! Join us for a lifetime of love and celebration starting today.Our love is the focus of our special day; come celebrate with us at the reception and feel the love.',
-    link : '#'
-  },
-  {
-    id : 6,
-    image : require('../assets/img3.jpg'),
-    title : 'Wedding Reception',
-    descriptiom : 'We re getting married, and you are invited to our reception; lets make it unforgettable! Join us for a lifetime of love and celebration starting today.Our love is the focus of our special day; come celebrate with us at the reception and feel the love.',
-    link : '#'
-  },
-]
-
+];
 
 const Services = () => {
-  return (
-    <>
-    <section id='services' className='block services-block mt-5'>
-    <div className='title-holder text-center'>
-            <h2>SERVICES</h2>
-            <div className='subtitle'>-We Provide Service For-</div>
-    </div>
-      <Container fluid >
-          <Row className=''>
-            {data.map((services) => {
-              return(
-                <Col   key={services.id} className='mt-2 d-flex justify-content-center ' >
-              <div className='holder'>
-                <Card className='text-center' style={{ width: '20rem', height:'33rem'}}>
-                  <Card.Img variant="top" src={services.image} />
-                  <Card.Body>
-                    <Card.Title>{services.title}</Card.Title>
-                    <Card.Text>{services.descriptiom}</Card.Text>
-                    <a href={services.link} className='btn btn-primary'>Read More</a>
-                  </Card.Body>
-                </Card>
-              </div>
-              </Col>
-              );
-            })}
-            
-          </Row>
-      </Container>
-    </section>
-    </>
-  )
-}
+  // State to track which service has been "Read More" clicked
+  const [expandedServiceIndex, setExpandedServiceIndex] = useState(null);
 
-export default Services
+  // Handle the "Read More" button click
+  const handleReadMoreClick = (index) => {
+    setExpandedServiceIndex(index === expandedServiceIndex ? null : index); // Toggle the expanded service
+  };
+
+  return (
+    <div className="services-container">
+      <h2 className="services-heading">SERVICES</h2>
+      <p className="services-description">
+        - We Provide Services For -
+      </p>
+
+      <div className="services-list">
+        {services.map((service, index) => (
+          <div className="service-card" key={index}>
+            <img
+              src={service.image}
+              alt={service.title}
+              className="service-image"
+            />
+            <h3 className="service-title">{service.title}</h3>
+            <p className="service-description">{service.description}</p>
+
+            {/* "Read More" button */}
+            <button
+              className="read-more-button"
+              onClick={() => handleReadMoreClick(index)}
+            >
+              {expandedServiceIndex === index ? 'Show Less' : 'Read More'}
+            </button>
+
+            {/* Display extra details if service is expanded */}
+            {expandedServiceIndex === index && (
+              <p className="service-more-info">{service.moreInfo}</p>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Services;
+
