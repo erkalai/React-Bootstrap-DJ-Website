@@ -22,7 +22,7 @@ const AppNavBar = () => {
                 <Nav.Link href="#home" >Home</Nav.Link>
                 <Nav.Link href="#services" >Services</Nav.Link>
                 <Nav.Link href="#gallery">Gallery</Nav.Link>
-                <Nav.Link href="#videos" >Videos</Nav.Link>
+                {/* <Nav.Link href="#videos" >Videos</Nav.Link> */}
                 <Nav.Link href="#contact_us">Contact Us</Nav.Link>
                 <Nav.Link href="#about_us" >About Us</Nav.Link>
             </Nav>

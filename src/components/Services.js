@@ -36,6 +36,7 @@ const Services = () => {
   };
 
   return (
+    <section id='services'>
     <div className="services-container">
       <h2 className="services-heading">SERVICES</h2>
       <p className="services-description">
@@ -69,6 +70,7 @@ const Services = () => {
         ))}
       </div>
     </div>
+    </section>
   );
 };
 

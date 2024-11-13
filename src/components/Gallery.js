@@ -17,6 +17,7 @@ const Gallery = () => {
   ];
 
   return (
+    <section id='gallery'>
     <div className="container-f my-5 m-1">
       <h2 className="services-heading text-center">- Gallery -</h2>
       <Row>
@@ -36,6 +37,7 @@ const Gallery = () => {
         ))}
       </Row>
     </div>
+    </section>
   );
 };
 
