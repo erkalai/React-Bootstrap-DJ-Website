@@ -1,0 +1,171 @@
+/* For screens larger than 1200px */
+@media screen and (min-width: 1201px) {
+    .DJimage {
+        display: flex;
+        width: 100%;
+        height: 800px;
+        background-image: url('../img/dgimg.png');
+        background-size: 100%;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+}
+
+/* For screens between 992px and 1200px */
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+    .DJimage {
+        display: flex;
+        width: 100%;
+        height: 600px;
+        background-image: url('../img/dgimg.png');
+        background-size: 100%;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+}
+
+/* For screens between 768px and 991px */
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .DJimage {
+        display: flex;
+        width: 100%;
+        height: 500px;
+        background-image: url('../img/dgimg.png');
+        background-size: 100%;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+}
+
+/* For screens between 576px and 767px */
+@media screen and (max-width: 768px) and (min-width: 576px) {
+    .DJimage {
+        display: flex;
+        width: 100%;
+        height: 500px;
+        background-image: url('../img/dgimg.png');
+        background-size: 100%;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+}
+
+/* For screens between 375px and 575px */
+@media screen and (max-width: 576px) and (min-width: 375px) {
+    .DJimage {
+        display: flex;
+        width: 100%;
+        height: 250px;
+        background-image: url('../img/dgimg.png');
+        background-size: 100%;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+}
+
+/* For screens smaller than 375px */
+@media screen and (max-width: 374px) {
+    .DJimage {
+        display: flex;
+        width: 100%;
+        height: 250px;
+        background-image: url('../img/dgimg.png');
+        background-size: 100%;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+}
+
+/* Footer Logo */
+.footerlogo{
+    width: 80px;
+    height: 6%;
+}
+
+/* About Us Backgrounf Image */
+.aboutus{
+    color: antiquewhite;
+    background-image: url('../dj-home.jpg');
+}
+
+
+
+/* Start About Us Container */
+/* Default styles for large screens (Desktop) */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  /* Two equal columns for text and image */
+    gap: 20px;  /* Space between columns */
+    align-items: center;  /* Vertically align content */
+  }
+  
+  .image {
+    width: 100%;  /* Ensure the image is responsive */
+    height: auto;  /* Maintain aspect ratio */
+  }
+  
+  .text {
+    padding-right: 20px;  /* Space between text and image */
+    word-wrap: break-word;  /* Ensure text wraps properly */
+  }
+  
+  /* Medium devices (Tablets) */
+  @media (max-width: 1024px) {
+    .container {
+      grid-template-columns: 1fr;  /* Stack text and image vertically */
+    }
+  
+    .image {
+      width: 100%;  /* Ensure the image takes full width */
+    }
+  
+    .text {
+      padding-right: 0;  /* Remove space between text and image */
+      margin-top: 20px;  /* Space between image and text */
+    }
+  }
+  
+  /* Small devices (Mobile phones) */
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;  /* Stack text and image vertically */
+    }
+  
+    .image {
+      width: 100%;  /* Image takes full width */
+    }
+  
+    .text {
+      margin-top: 20px;  /* Space between image and text */
+      word-wrap: break-word;  /* Ensure text wraps properly */
+    }
+  }
+  /* Start About Us Container */
+
+  /* Read More Btn useing About Us */
+.readbtn {
+    font-weight: bold;
+    background-color: white;      /* White background */
+    color: red;                   /* Red text */
+    border: 2px solid red;        /* Optional: Red border to match text color */
+    padding: 10px 20px;           /* Add padding for better spacing */
+    text-align: center;           /* Center the text */
+    text-decoration: none;        /* Remove underline from the link */
+    display: inline-block;        /* Ensure it's inline like a button */
+    border-radius: 5px;           /* Optional: Rounded corners */
+    transition: background-color 0.3s, color 0.3s;  /* Smooth transition for hover */
+  }
+  
+  .readbtn:hover {
+    background-color: red;       /* Red background on hover */
+    color: white;                 /* White text on hover */
+  }
+  
+
+  /* End Read More Btn useing About Us */

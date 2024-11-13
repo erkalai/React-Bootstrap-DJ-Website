@@ -6,24 +6,33 @@ const WhatsApp = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [showIcon, setShowIcon] = useState(true); // State to control the visibility of the WhatsApp icon
 
-  // Handle modal visibility
+  // Handle modal visibility (opens the modal)
   const handleShow = () => setShowModal(true);
+
+  // Handle modal closing (closes the modal)
   const handleClose = () => setShowModal(false);
 
-  // Handle form submission to create WhatsApp message link
+  // Handle hiding the WhatsApp icon only
+  const handleCloseIcon = (e) => {
+    e.stopPropagation(); // Prevent the click from affecting the modal
+    setShowIcon(false); // Hide the WhatsApp icon
+  };
+
+  // Handle form submission to generate WhatsApp message link
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Construct the message text to send via WhatsApp
+    // Construct the message text
     const messageText = `
       Name: ${name}
       Email: ${email}
       Message: ${message}
     `.trim();
 
-    // Replace with your own WhatsApp number (including country code, but no '+')
-    const whatsappNumber = "1234567890";  // Your WhatsApp phone number
+    // WhatsApp phone number (replace with your own)
+    const whatsappNumber = "916383006516";
 
     // Create the WhatsApp link
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(messageText)}`;
@@ -31,47 +40,49 @@ const WhatsApp = () => {
     // Open WhatsApp with the generated link
     window.open(whatsappLink, "_blank");
 
-    // Close the modal after submission
+    // Close the modal after form submission
     setShowModal(false);
   };
 
   return (
     <div>
       {/* WhatsApp Icon Button */}
-      <button 
-        className="btn btn-success" 
-        onClick={handleShow} 
-        style={{
-          position: 'fixed', 
-          bottom: '20px', 
-          left: '20px', 
-          borderRadius: '50%', 
-          padding: '10px',
-          zIndex: 1000
-        }}
-      >
-        <i className=" bi bi-whatsapp" style={{ fontSize: '30px' }}></i>
-        
-        {/* Close button inside the WhatsApp icon */}
-        <button 
-          onClick={handleClose} 
+      {showIcon && (
+        <button
+          className="btn btn-success"
+          onClick={handleShow} // Open the modal when clicking the WhatsApp icon
           style={{
-            position: 'absolute', 
-            top: '0px', 
-            left: '0px', 
-            background: 'red', 
-            border: 'none', 
-            borderRadius: '50%', 
-            padding: '5px', 
-            color: 'white', 
-            fontSize: '12px', 
-            cursor: 'pointer',
-            zIndex: 1100 // Make sure it's on top of the WhatsApp icon
+            position: 'fixed',
+            bottom: '20px',
+            left: '20px',
+            borderRadius: '50%',
+            padding: '10px',
+            zIndex: 1000
           }}
         >
-          X
+          <i className="bi bi-whatsapp" style={{ fontSize: '30px' }}></i>
+
+          {/* Close button inside the WhatsApp icon */}
+          <button
+            onClick={handleCloseIcon} // Close the icon (but not the modal) when clicked
+            style={{
+              position: 'absolute',
+              top: '0px',
+              left: '0px',
+              background: '',
+              border: 'none',
+              borderRadius: '50%',
+              padding: '5px',
+              color: 'black',
+              fontSize: '12px',
+              cursor: 'pointer',
+              zIndex: 1100 // Make sure it is on top of the WhatsApp icon
+            }}
+          >
+            X
+          </button>
         </button>
-      </button>
+      )}
 
       {/* Modal for Contact Form */}
       <Modal show={showModal} onHide={handleClose}>
