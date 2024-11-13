@@ -25,6 +25,7 @@ const AppFooter = () => {
             <Row className='ms-3'>
                 <Col sm={3}>
                 <Image className='footerlogo d-block' src={require('../assets/img/Logo.png')} fluid />
+                <div className='fw-bold'>Muthamizh Sound Wave</div>
                 <div className='fw-bold'>Contact Us</div>
                     <div>+91 80983 53500</div>
                     <div>+91 80988 87469</div>
@@ -58,9 +59,7 @@ const AppFooter = () => {
                 </Col>
             </Row>
         </Container>
-
     </footer>
-
    </>
   )
 }

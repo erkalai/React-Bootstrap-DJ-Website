@@ -5,8 +5,8 @@ import Row from 'react-bootstrap/esm/Row'
 
 const GeneralEnquiries = () => {
   return (
-    <section id='General_Enquiries' className='GE_BG'>
-        <Container className='GE_BG mt-5 mb-3 text-center'>
+    <section id='General_Enquiries' className=''>
+        <Container className=' mt-5 mb-3 text-center'>
             <Row>
                 <Col>
                 <div className='mt-2'>

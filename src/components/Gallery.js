@@ -1,51 +1,40 @@
-import React from 'react'
-
-import { Slide } from 'react-slideshow-image';
-import 'react-slideshow-image/dist/styles.css'
-
-
- 
-  
-  const divStyle = {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundSize: 'cover',
-    height: '400px'
-  }
-  const slideImages = [
-    {
-        image : require('../assets/img3.jpg')
-    },
-    {
-        image : require('../assets/img1.jpg')
-    },
-    {
-        image : require('../assets/img2.jpg')
-    },
-  ];
+import React from 'react';
+import { Card, Col, Row } from 'react-bootstrap';
+import '../assets/css/style.css';  
 
 const Gallery = () => {
+  // Sample array of image data (URLs and titles)
+  const images = [
+    { src: 'https://via.placeholder.com/300', title: 'Image 1' },
+    { src: 'https://via.placeholder.com/300', title: 'Image 2' },
+    { src: 'https://via.placeholder.com/300', title: 'Image 3' },
+    { src: 'https://via.placeholder.com/300', title: 'Image 4' },
+    { src: 'https://via.placeholder.com/300', title: 'Image 5' },
+    { src: 'https://via.placeholder.com/300', title: 'Image 6' },
+    { src: 'https://via.placeholder.com/300', title: 'Image 7' },
+    { src: 'https://via.placeholder.com/300', title: 'Image 8' },
+  ];
+  
   return (
-    <section id='gallery'>
-        <div className='title-holder text-center mt-3'>
-        <h2>Gallery</h2>
-        </div>
-        <div className="slide-container">
-            <Slide>
-            {slideImages.map((slideImage, index)=> (
-                <div key={index}>
-                <div style={{ ...divStyle, 'backgroundImage': `url(${slideImage.image})` }}>
-                    {/* <span style={spanStyle}>{slideImage.caption}</span> */}
-                </div>
-                </div>
-            ))} 
-            </Slide>
-        </div>
-      </section>
-  )
-}
+    <div className="container-f my-5 m-1">
+      <Row>
+        {images.map((image, index) => (
+          <Col key={index} xs={12} sm={6} md={4} lg={3} className="mb-4">
+            <Card>
+              <Card.Img
+                variant="top"
+                src={image.src}
+                className="zoom-effect"
+              />
+              <Card.Body>
+                <Card.Title>{image.title}</Card.Title>
+              </Card.Body>
+            </Card>
+          </Col>
+        ))}
+      </Row>
+    </div>
+  );
+};
 
-export default Gallery
-
-
+export default Gallery;
