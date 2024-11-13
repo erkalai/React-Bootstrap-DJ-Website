@@ -14,13 +14,14 @@ import GeneralEnquiries from './components/GeneralEnquiries';
 import DGImage from './components/DGImage';
 import ContactForm from './components/ContactForm';
 import Whatsapp from './components/Whatsapp'
-
+import Home from './components/Home'
 
 function App() {
   return (
     <>
       <AppNavBar />
-      <Banner />
+      <Home />
+      {/* <Banner /> */}
       <Story />
       <Services />
       <Gallery />

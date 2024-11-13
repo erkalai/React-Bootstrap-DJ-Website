@@ -168,11 +168,10 @@
   }
   
   .readbtn:hover {
-    background-color: red;       /* Red background on hover */
-    color: white;                 /* White text on hover */
+    background-color: red;       
+    color: white;                
   }
   
-
   /* End Read More Btn useing About Us */
 
 
@@ -190,3 +189,73 @@
   }
 
   /* End Gallery Style*/
+
+  /* Home Page */
+ 
+  /* Home background */
+/* Home background */
+.homebg {
+  background-image: url('../img/homebg.jpg');  /* Your background image */
+  background-size: cover;      /* Ensure the image covers the full container */
+  background-position: center; /* Center the background image */
+  background-attachment: fixed; /* Optional: keeps background fixed while scrolling */
+  height: 100vh;                /* Full viewport height */
+  display: flex;                /* Use flexbox for centering */
+  flex-direction: column;       /* Stack the elements vertically */
+  justify-content: center;      /* Center vertically */
+  align-items: center;          /* Center horizontally */
+  text-align: center;           /* Center the text */
+  color: white;                 /* White text for the heading */
+}
+
+.heading {
+  font-size: 2.5rem;           /* Large font for the heading */
+  font-weight: bold;           /* Make the text bold */
+  margin-bottom: 2rem;         /* Space between the heading and button */
+  max-width: 80%;              /* Limit the width of the heading */
+  line-height: 1.4;            /* Adjust line height for readability */
+}
+
+.contact-btn {
+  background-color: transparent; /* Transparent background by default */
+  color: white;                  /* White text */
+  padding: 1rem 2rem;            /* Padding for the button */
+  font-size: 1.2rem;             /* Font size for the button */
+  font-weight: bold;             /* Bold text */
+  border: 2px solid white;      /* White border around the button */
+  border-radius: 30px;           /* Rounded corners */
+  text-decoration: none;         /* Remove underline */
+  transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for the button */
+.contact-btn:hover {
+  background-color: transparent;      /* Black background on hover */
+  color: white;                 /* White text on hover */
+  transform: scale(1.1);         /* Slightly enlarge the button on hover */
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2rem;            /* Adjust heading font size for smaller screens */
+    margin-bottom: 1.5rem;      /* Less space between heading and button */
+  }
+  .contact-btn {
+    font-size: 1rem;            /* Smaller button text on smaller screens */
+    padding: 0.8rem 1.5rem;     /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.5rem;          /* Even smaller heading text for very small screens */
+  }
+  .contact-btn {
+    font-size: 0.9rem;          /* Smaller button text for very small screens */
+    padding: 0.6rem 1.2rem;     /* Further reduce padding on smaller devices */
+  }
+}
+
+
+  
+  /* End Home Page style */

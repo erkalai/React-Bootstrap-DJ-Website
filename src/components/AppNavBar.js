@@ -10,7 +10,7 @@ const AppNavBar = () => {
   return (
     <section id='home'>
     
-    <Navbar expand="lg" data-bs-theme='dark' className="position-sticky bg-body-tertiary d-block sticky-top "  >
+   <Navbar expand="lg" style={{ '--bs-navbar-brand-margin-end': '0rem' }} data-bs-theme="dark" className="position-sticky bg-body-tertiary d-block sticky-top">
         <Container>
           <Image className='titlelogo' src={require('../assets/img/Logo.png')} fluid />
             <Navbar.Brand href="#home">Muthamizh Audios
