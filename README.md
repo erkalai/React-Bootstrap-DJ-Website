@@ -15,10 +15,9 @@ https://muthamizhdj.vercel.app/
 ## Screenshots
 
 ![App Screenshot](https://i.ibb.co/Qc1GBMj/DJ1.png)
+![App Screenshot](https://i.ibb.co/Qc1GBMj/DJ2.png)
+![App Screenshot](https://i.ibb.co/Qc1GBMj/DJ3.png)
 
-![App Screenshot]([[img]https://i.ibb.co/Qc1GBMj/DJ1.png[/img]](https://i.ibb.co/F3h5qmt/DJ2.png
-
-https://i.ibb.co/6r5SbfR/DJ3.png))
 
 
 
