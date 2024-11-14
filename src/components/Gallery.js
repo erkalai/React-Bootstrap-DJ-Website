@@ -9,8 +9,6 @@ const Gallery = () => {
     { src: require('../assets/img/cor (1).jpg'), title: '' },
     { src: require('../assets/img/audio.jpg'), title: '' },
     { src: require('../assets/img/cor (2).jpg'), title: '' },
-    { src: require('../assets/img/cor (3).jpg'), title: '' },
-    { src: require('../assets/img/audio.jpg'), title: '' },
    
   ];
 

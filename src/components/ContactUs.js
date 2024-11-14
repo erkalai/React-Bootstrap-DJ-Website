@@ -63,7 +63,7 @@ const ContactForm = () => {
                 required
               />
 
-              <label htmlFor="email">Email:</label>
+              <label htmlFor="email">E-Mail:</label>
               <input
                 type="email"
                 id="email"
@@ -119,10 +119,10 @@ const ContactForm = () => {
 
       <div id="contact-info">
         <h2>Contact Information</h2>
-        <p>Email: <a href="mailto:muthamizhaudios@gmail.com">muthamizhaudios@gmail.com</a></p>
-        <p>Email: <a href="mailto:tamizh3500@gmail.com">tamizh3500@gmail.com</a></p>
-        <p>Mobile: <a href="tel:+918098353500">+91 80983 53500</a></p>
-        <p>Mobile: <a href="tel:+918098887469">+91 80988 87469</a></p>
+        <p className='contactEmail'>E-Mail: </p><p> <a href="mailto:muthamizhaudios@gmail.com">muthamizhaudios@gmail.com</a></p>
+        <p> <a href="mailto:tamizh3500@gmail.com">tamizh3500@gmail.com</a></p>
+        <p className='contactMobile'>Mobile: </p><p><a href="tel:+918098353500">+91 80983 53500</a></p>
+        <p><a href="tel:+918098887469">+91 80988 87469</a></p>
       </div>
     </div>
     </section>

@@ -13,7 +13,8 @@ const AppFooter = () => {
         <div className=' bg-black  p-1'>
             <div className='  text-center me-5'> Get connected with us on social networks
                 <div className='iconHover'>
-                <a className=' text-end ms-3' href="https://wa.me/918098353500"><i className='insta btn bi bi-instagram  text-white text-end'></i></a>
+                <a className=' text-end ms-3' href="https://www.instagram.com/muthamizhaudios?utm_source=ig_web_button_share_sheet&igsh=ODdmZWVhMTFiMw=="><i className='insta btn bi bi-instagram  text-white text-end'></i></a>
+                <a className='  ms-3' href="https://www.facebook.com/profile.php?id=100069840241495&mibextid=rS40aB7S9Ucbxw6v"><i className='fb btn bi bi-facebook text-white text-end'></i></a>
                 <a className='  ms-3' href="https://www.youtube.com/@muthamizhaudios"><i className='utube btn bi bi-youtube  text-white text-end '></i></a>
                 <a className='ms-3' href="https://wa.me/918098887469"><i className='wtsapp btn bi bi-whatsapp  text-white text-end'></i></a>
                 <a className='ms-3' href="https://wa.me/918098353500"><i className='wtsapp  btn bi bi-whatsapp  text-white text-end'></i></a>
@@ -49,7 +50,7 @@ const AppFooter = () => {
                 <li><a href='#services' className='text-white'>Services</a></li>
                 <li><a href='#gallery' className='text-white'>Gallery</a></li>
                 <li><a href='#about_us' className='text-white'>About Us</a></li>
-                <li><a href='#contact_us' className='text-white'>Contact Us</a></li>
+                <li><a href='#contactus' className='text-white'>Contact Us</a></li>
             </ul>
         </Col>
     </Row>

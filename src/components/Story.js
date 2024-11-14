@@ -12,7 +12,7 @@ function Story() {
         </div>
 
         <div className="story-center">
-          <div className="exclamation">!</div>
+          {/* <div className="exclamation">!</div> */}
           <p className="story-description">
             We bring your celebrations to life with our top-notch event management services for weddings, engagements,
             birthday parties, and more. We specialize in creating unique and memorable experiences, from elegant decor

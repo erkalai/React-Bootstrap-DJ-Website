@@ -1,3 +1,9 @@
+/* MuthaMizh DJ */
+.titlename{
+  text-decoration: none;
+}
+
+
 /* For screens larger than 1200px */
 @media screen and (min-width: 1201px) {
     .DJimage {
@@ -93,7 +99,7 @@
     height: 60px;
 }
 
-/* About Us Backgrounf Image */
+/* About Us Background Image */
 .aboutus{
     color: antiquewhite;
     background-image: url('../dj-home.jpg');
@@ -109,18 +115,18 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;  /* Two equal columns for text and image */
-    gap: 20px;  /* Space between columns */
-    align-items: center;  /* Vertically align content */
+    gap: 20px;  
+    align-items: center;  /* Vertical align content */
   }
   
   .image {
-    width: 100%;  /* Ensure the image is responsive */
-    height: auto;  /* Maintain aspect ratio */
+    width: 100%;  /* responsive image  */
+    height: auto;  /* Aspect ratio */
   }
   
   .text {
-    padding-right: 20px;  /* Space between text and image */
-    word-wrap: break-word;  /* Ensure text wraps properly */
+    padding-right: 20px;  
+    word-wrap: break-word;  /*  text wraps  */
   }
   
   /* Medium devices (Tablets) */
@@ -130,12 +136,12 @@
     }
   
     .image {
-      width: 100%;  /* Ensure the image takes full width */
+      width: 100%;  
     }
   
     .text {
-      padding-right: 0;  /* Remove space between text and image */
-      margin-top: 20px;  /* Space between image and text */
+      padding-right: 0;  
+      margin-top: 20px; 
     }
   }
   
@@ -146,12 +152,12 @@
     }
   
     .image {
-      width: 100%;  /* Image takes full width */
+      width: 100%; 
     }
   
     .text {
-      margin-top: 20px;  /* Space between image and text */
-      word-wrap: break-word;  /* Ensure text wraps properly */
+      margin-top: 20px;  
+      word-wrap: break-word;  /* text wraps*/
     }
   }
   /* Start About Us Container */
@@ -159,14 +165,14 @@
   /* Read More Btn useing About Us */
 .readbtn {
     font-weight: bold;
-    background-color: white;      /* White background */
-    color: red;                   /* Red text */
-    border: 2px solid red;        /* Optional: Red border to match text color */
-    padding: 10px 20px;           /* Add padding for better spacing */
-    text-align: center;           /* Center the text */
-    text-decoration: none;        /* Remove underline from the link */
-    display: inline-block;        /* Ensure it's inline like a button */
-    border-radius: 5px;           /* Optional: Rounded corners */
+    background-color: white;     
+    color: red;                   
+    border: 2px solid red;      
+    padding: 10px 20px;          
+    text-align: center;           
+    text-decoration: none;        
+    display: inline-block;        
+    border-radius: 5px;           
     transition: background-color 0.3s, color 0.3s;  /* Smooth transition for hover */
   }
   
@@ -182,13 +188,13 @@
 
   .zoom-effect {
     transition: transform 0.3s ease-in-out;  /* Smooth transition */
-    width: 100%;  /* Ensure images fill their container */
-    height: auto;  /* Maintain aspect ratio */
+    width: 100%;  
+    height: auto;  /* Aspect ratio */
   }
   
   /* Zoom effect when hovering over the image */
   .zoom-effect:hover {
-    transform: scale(1.1);  /* Zoom in by 10% */
+    transform: scale(1.1);  /* Zoom  10% */
   }
 
   /* End Gallery Style*/
@@ -198,33 +204,33 @@
   /* Home background */
 
 .homebg {
-  background-image: url('../img/homebg.jpg');  /* Your background image */
-  background-size: cover;      /* Ensure the image covers the full container */
-  background-position: center; /* Center the background image */
-  background-attachment: fixed; /* Optional: keeps background fixed while scrolling */
-  height: 100vh;                /* Full viewport height */
-  display: flex;                /* Use flexbox for centering */
-  flex-direction: column;       /* Stack the elements vertically */
-  justify-content: center;      /* Center vertically */
-  align-items: center;          /* Center horizontally */
-  text-align: center;           /* Center the text */
-  color: white;                 /* White text for the heading */
+  background-image: url('../img/homebg.jpg');  
+  background-size: cover;      
+  background-position: center; 
+  background-attachment: fixed; /* background fixed while scrolling */
+  height: 100vh;               
+  display: flex;                
+  flex-direction: column;      
+  justify-content: center;      
+  align-items: center;         
+  text-align: center;           
+  color: white;                
 }
 
 .heading {
-  font-size: 2.5rem;           /* Large font for the heading */
-  font-weight: bold;           /* Make the text bold */
-  margin-bottom: 2rem;         /* Space between the heading and button */
-  max-width: 80%;              /* Limit the width of the heading */
-  line-height: 1.4;            /* Adjust line height for readability */
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  max-width: 80%;
+  line-height: 1.4; 
 }
 
 .contact-btn {
   background-color: transparent; 
-  color: white;                  /* White text */
-  padding: 1rem 2rem;            /* Padding for the button */
-  font-size: 1.2rem;             /* Font size for the button */
-  font-weight: bold;             /* Bold text */
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
   border: 2px solid white;    
   border-radius: 30px;        
   transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
@@ -232,29 +238,29 @@
 
 /* Hover effect for the button */
 .contact-btn:hover {
-  background-color: transparent;      /* Black background on hover */
-  color: white;                 /* White text on hover */
+  background-color: transparent;
+  color: white;
   transform: scale(1.1);         /* Slightly enlarge the button on hover */
 }
 
 @media (max-width: 768px) {
   .heading {
-    font-size: 2rem;            /* Adjust heading font size for smaller screens */
-    margin-bottom: 1.5rem;      /* Less space between heading and button */
+    font-size: 2rem;           
+    margin-bottom: 1.5rem;     
   }
   .contact-btn {
-    font-size: 1rem;            /* Smaller button text on smaller screens */
-    padding: 0.8rem 1.5rem;     /* Adjust padding for smaller screens */
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
   }
 }
 
 @media (max-width: 480px) {
   .heading {
-    font-size: 1.5rem;          /* Even smaller heading text for very small screens */
+    font-size: 1.5rem;
   }
   .contact-btn {
-    font-size: 0.9rem;          /* Smaller button text for very small screens */
-    padding: 0.6rem 1.2rem;     /* Further reduce padding on smaller devices */
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
   }
 }
 
@@ -385,11 +391,11 @@
 /* Flexbox container for content */
 .story-content {
   display: flex;
-  flex-direction: row; /* Align content in a row */
-  justify-content: space-between; /* Distribute the items evenly */
+  flex-direction: row; 
+  justify-content: space-between; 
   width: 100%;
-  max-width: 1200px; /* Limit the max width */
-  flex-wrap: wrap; /* Allow wrapping on small screens */
+  max-width: 1200px; 
+  flex-wrap: wrap;
 }
 
 /* Left Section (Title and Subtitle) */
@@ -417,21 +423,21 @@
 
 /* Center Section (Exclamation Mark and Description) */
 .story-center {
-  flex: 2; /* This will take up more space in the center */
+  flex: 2; /* take up more space in the center */
   position: relative;
   padding: 20px;
   text-align: center;
 }
-
+/* 
 .exclamation {
-  font-size: 10rem; /* Larger exclamation mark */
+  font-size: 10rem;
   font-weight: bold;
   color: #f0ad4e;
   position: absolute;
   top: -50px;
   left: 50%;
   transform: translateX(-50%);
-}
+} */
 
 .story-description {
   font-size: 1.4rem;
@@ -439,7 +445,7 @@
   line-height: 1.6;
   text-align: justify;
   margin-top: 80px;
-  max-width: 90%; /* Keep description text at a reasonable width */
+  max-width: 90%; /*description text at a reasonable width */
   margin-left: auto;
   margin-right: auto;
 }
@@ -450,7 +456,7 @@
   padding: 20px;
   text-align: center;
   display: flex;
-  justify-content: center; /* Center image */
+  justify-content: center;
 }
 
 .story-img {
@@ -490,7 +496,7 @@
 
   .story-content {
     flex-direction: column;
-    align-items: center; /* Center all content in column */
+    align-items: center; 
   }
 }
 
@@ -639,7 +645,7 @@ h1, .h2 {
 }
 
 #contact-info a:hover {
-  text-decoration: underline; /* Underline on hover for links */
+  text-decoration: underline;
 }
 
 #google-map iframe {
@@ -690,14 +696,14 @@ h1, .h2 {
 
 .sendbtn{
     font-weight: bold;
-    background-color: white;      /* White background */
-    color: red;                   /* Red text */
-    border: 2px solid red;        /* Optional: Red border to match text color */
-    padding: 10px 20px;           /* Add padding for better spacing */
-    text-align: center;           /* Center the text */
-    text-decoration: none;        /* Remove underline from the link */
-    display: inline-block;        /* Ensure it's inline like a button */
-    border-radius: 5px;           /* Optional: Rounded corners */
+    background-color: white;
+    color: red;
+    border: 2px solid red;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;  
 
 }
@@ -761,12 +767,18 @@ statsh2 {
 
 /* Hover Footer ICON */
 
-.insta,.utube,.wtsapp{
+.insta,.utube,.wtsapp,.fb{
   border-radius: 50%;
 }
 
-.insta:hover,.utube:hover,.wtsapp:hover{
+.insta:hover,.utube:hover,.wtsapp:hover,.fb:hover{
   border-radius: 50%;
 background-color: white;
 color: black !important;
+}
+
+/* Contact Us Email Decoration  */
+
+.contactEmail,.contactMobile{
+  text-decoration: underline !important;
 }

@@ -8,15 +8,15 @@ const StatsCard = () => {
 
   // Mock values for the counts (e.g., from API or static data)
   const targetValues = {
-    projectsDone: 150,
-    trustedClients: 100,
+    projectsDone: 1200,
+    trustedClients: 1000,
     teamMembers: 16
   };
 
   // Function to animate the count
   const animateCount = (setState, target) => {
     let start = 0;
-    const increment = target / 100;
+    const increment = target / 50;
     const interval = setInterval(() => {
       start += increment;
       if (start >= target) {
