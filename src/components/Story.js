@@ -1,6 +1,6 @@
 import React from 'react';
-import '../assets/css/style.css'; // Custom CSS file for styling
-import Image from 'react-bootstrap/Image'; // You can still use react-bootstrap's Image component for responsiveness
+import '../assets/css/style.css'; 
+import Image from 'react-bootstrap/Image'; 
 
 function Story() {
   return (

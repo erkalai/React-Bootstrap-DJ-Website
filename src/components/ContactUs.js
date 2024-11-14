@@ -1,4 +1,3 @@
-// ContactForm.js
 import React, { useState } from 'react';
 import '../assets/css/style.css'
 
@@ -6,12 +5,12 @@ const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    phone: '', // Added phone number field
+    phone: '', 
     message: ''
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  // Handle input changes
+  // Handle input 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -20,7 +19,7 @@ const ContactForm = () => {
     });
   };
 
-  // Handle form submission
+  // Handle  submission
   const handleSubmit = (e) => {
     e.preventDefault();
     const { name, email, phone, message } = formData;
@@ -31,14 +30,14 @@ const ContactForm = () => {
       return;
     }
 
-    // Simulate sending data (replace this with actual email sending logic)
+    // Simulate sending data 
     console.log('Form submitted:', formData);
 
     // Show success message
     alert('Thank you for your message. We will get back to you soon!');
     setIsSubmitted(true);
 
-    // Optionally, reset the form after submission
+    // Reset the form after submission
     setFormData({ name: '', email: '', phone: '', message: '' });
   };
 
@@ -47,7 +46,6 @@ const ContactForm = () => {
     <div id="contact-section">
       <h1>Contact Us</h1>
 
-      {/* Contact Form and Google Map Wrapper */}
       <div id="contact-container">
         {/* Contact Form */}
         <div id="contact-form">

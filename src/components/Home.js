@@ -5,7 +5,7 @@ const Home = () => {
     <>
     <div className='homebg'>
     <div className='heading'> Elegance, precision, and unforgettable moments for your occasion </div>
-    <a href="#contact" className="contact-btn">Contact Us</a>
+    <a href="#contactus" className="contact-btn">Contact Us</a>
     </div>
     </>
   )

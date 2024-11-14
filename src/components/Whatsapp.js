@@ -8,10 +8,10 @@ const WhatsApp = () => {
   const [message, setMessage] = useState('');
   const [showIcon, setShowIcon] = useState(true); // State to control the visibility of the WhatsApp icon
 
-  // Handle modal visibility (opens the modal)
+  // Handle modal visibility 
   const handleShow = () => setShowModal(true);
 
-  // Handle modal closing (closes the modal)
+  // Handle modal closing 
   const handleClose = () => setShowModal(false);
 
   // Handle hiding the WhatsApp icon only
@@ -31,8 +31,8 @@ const WhatsApp = () => {
       Message: ${message}
     `.trim();
 
-    // WhatsApp phone number (replace with your own)
-    const whatsappNumber = "916383006516";
+    // WhatsApp phone number 
+    const whatsappNumber = "+918098353500";
 
     // Create the WhatsApp link
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(messageText)}`;
@@ -64,7 +64,7 @@ const WhatsApp = () => {
 
           {/* Close button inside the WhatsApp icon */}
           <button
-            onClick={handleCloseIcon} // Close the icon (but not the modal) when clicked
+            onClick={handleCloseIcon} // Close the icon when clicked
             style={{
               position: 'absolute',
               top: '0px',
@@ -76,7 +76,7 @@ const WhatsApp = () => {
               color: 'black',
               fontSize: '12px',
               cursor: 'pointer',
-              zIndex: 1100 // Make sure it is on top of the WhatsApp icon
+              zIndex: 1100 
             }}
           >
             X

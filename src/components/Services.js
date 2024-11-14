@@ -7,21 +7,21 @@ const services = [
     title: 'Audio Services',
     description:
       'From the soft melodies of a wedding to lively tunes at a birthday party, our audio services ensure perfect sound.',
-    image: require('../assets/img/sericeAudio.jpg'),  // Path to your image
+    image: require('../assets/img/sericeAudio.jpg'),  
     moreInfo: 'We use high-quality sound systems for crystal-clear audio at all events, ensuring every guest hears perfectly.',
   },
   {
     title: 'Event Management',
     description:
       'We handle every aspect of your event, from seamless coordination to ensuring that every detail is flawless.',
-    image: require('../assets/img/serviceEvent.jpg'), // Path to your image
+    image: require('../assets/img/serviceEvent.jpg'), 
     moreInfo: 'Our experienced event planners will guide you through the entire planning process to make your event stress-free.',
   },
   {
     title: 'Lighting Services',
     description:
       'Our lighting services add that magical touch to your event, creating the perfect atmosphere for any occasion.',
-    image: require('../assets/img/lighting.jpg'), // Path to your image
+    image: require('../assets/img/lighting.jpg'), 
     moreInfo: 'We offer customized lighting solutions to match the theme and mood of your event, from ambient lighting to stage lights.',
   },
 ];
@@ -32,7 +32,7 @@ const Services = () => {
 
   // Handle the "Read More" button click
   const handleReadMoreClick = (index) => {
-    setExpandedServiceIndex(index === expandedServiceIndex ? null : index); // Toggle the expanded service
+    setExpandedServiceIndex(index === expandedServiceIndex ? null : index); // expanded service
   };
 
   return (

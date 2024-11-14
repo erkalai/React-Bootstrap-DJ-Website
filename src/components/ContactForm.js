@@ -11,16 +11,14 @@ const ContactForm = () => {
 
   return (
     <div>
-      {/* Contact Icon */}
       <button 
         className="btn btn-primary" 
         onClick={handleShow} 
         style={{ position: 'fixed', bottom: '80px', right: '25px', borderRadius: '50%' }}
       >
-        <i className="fbi bi-envelope-arrow-up-fill"></i> {/* Font Awesome icon */}
+        <i className="fbi bi-envelope-arrow-up-fill"></i> 
       </button>
 
-      {/* Modal for Contact Form */}
       <Modal show={showModal} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title className='text-center'>Contact Us</Modal.Title>
