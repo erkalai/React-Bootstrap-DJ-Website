@@ -21,13 +21,11 @@ function App() {
     <>
       <AppNavBar />
       <Home />
-      {/* <Banner /> */}
       <Story />
       <Services />
       <Gallery />
       <AboutUs />
-      {/* <ContactUs /> */}
-      {/* <GeneralEnquiries /> */}
+      <ContactUs />
       <DGImage />
       <Appfooter />
       <ContactForm />
