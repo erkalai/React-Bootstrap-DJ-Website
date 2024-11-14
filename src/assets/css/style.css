@@ -713,7 +713,7 @@ h1, .h2 {
 /* End Stats Card */
 
 /* StatsCard.css */
-./* Style for the stats container */
+/* Style for the stats container */
 .stats-container {
   display: flex;
   justify-content: space-around;
@@ -721,6 +721,7 @@ h1, .h2 {
   flex-wrap: wrap; /* Allow wrapping of cards */
   margin: 20px;
   gap: 20px; /* Space between cards */
+  padding: 0 10px; /* Add some padding for small screens */
 }
 
 /* Style for each stats card */
@@ -732,6 +733,7 @@ h1, .h2 {
   width: 250px; /* Set a fixed width for each card */
   text-align: center;
   transition: transform 0.3s ease; /* Add smooth transition for hover */
+  margin: 0 auto; /* Center the card */
 }
 
 .stats-card:hover {
@@ -761,12 +763,13 @@ h1, .h2 {
   }
 
   .stats-card {
-    width: 100%; /* Take up full width on small screens */
+    width: 90%; /* Take up 90% width on small screens */
     max-width: 300px; /* Limit maximum width */
     margin-bottom: 20px; /* Add space between stacked cards */
   }
 }
 
+/* Adjust for very small mobile devices */
 @media screen and (max-width: 480px) {
   .stats-number {
     font-size: 24px; /* Adjust font size for very small screens */
@@ -775,7 +778,19 @@ h1, .h2 {
   .statsh2 {
     font-size: 16px; /* Adjust title font size */
   }
+  
+  .stats-container {
+    gap: 15px; /* Reduce gap between cards */
+    padding: 0 5px; /* Add extra padding for very small screens */
+  }
+
+  .stats-card {
+    width: 100%; /* Full width for cards on very small screens */
+    max-width: 100%; /* Remove any max-width restriction */
+    margin-bottom: 15px; /* Add space between stacked cards */
+  }
 }
+
 
 
 
