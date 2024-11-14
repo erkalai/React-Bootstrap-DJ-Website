@@ -12,8 +12,8 @@ const AppNavBar = () => {
    <Navbar expand="lg" style={{ '--bs-navbar-brand-margin-end': '0rem' }} data-bs-theme="dark" className="position-sticky bg-body-tertiary d-block sticky-top">
         <Container>
         <a href='https://muthamizhdj.vercel.app/'> <Image className='titlelogo' src={require('../assets/img/Logo.png')} fluid /></a>
-        <a  className='titlename' href='https://muthamizhdj.vercel.app/'>    <Navbar.Brand  >Muthamizh Audios
-            
+        <a  className='titlename' href='https://muthamizhdj.vercel.app/'>    <Navbar.Brand  >Muthamizh DJ
+          
             </Navbar.Brand></a> 
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav " className=' justify-content-end'>
