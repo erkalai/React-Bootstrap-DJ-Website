@@ -14,7 +14,7 @@ https://muthamizhdj.vercel.app/
 
 ## Screenshots
 
-![App Screenshot](https://i.ibb.co/hYbGv7g/muthamizhdj-vercel-app.png)
+![App Screenshot]([img]https://i.ibb.co/hYbGv7g/muthamizhdj-vercel-app.png[/img])
 
 
 
