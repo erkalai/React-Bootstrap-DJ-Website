@@ -16,7 +16,7 @@ const StatsCard = () => {
   // Function to animate the count
   const animateCount = (setState, target) => {
     let start = 0;
-    const increment = target / 2;
+    const increment = target / 500;
     const interval = setInterval(() => {
       start += increment;
       if (start >= target) {
