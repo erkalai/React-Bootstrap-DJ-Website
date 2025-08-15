@@ -15,14 +15,17 @@ export default function Login() {
     <div
       className="container-fluid d-flex align-items-center justify-content-center min-vh-100"
       style={{
-        background:
-          "radial-gradient(1200px 600px at 20% -10%, rgba(220,53,69,.15), transparent 60%), radial-gradient(900px 500px at 120% 110%, rgba(220,53,69,.15), transparent 60%), #000",
+        backgroundColor: "#fff",
+        backgroundImage: "url('/dgimg.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
     >
       <div
         className="card shadow-lg border-0"
         style={{
-          width: 350,            // very small card
+          width: 350,
           backgroundColor: "#0f0f10",
           borderRadius: "1.25rem",
           boxShadow:
@@ -68,7 +71,11 @@ export default function Login() {
             </div>
 
             <div className="d-flex justify-content-between mb-3">
-              <a href="/forgot-password" className="small" style={{ color: "#dc3545" }}>
+              <a
+                href="/forgot-password"
+                className="small"
+                style={{ color: "#dc3545" }}
+              >
                 Forgot?
               </a>
               <a href="/register" className="small text-white-50">
